@@ -1,0 +1,4 @@
+# Cloudflare Pages SPA 回退规则
+# 单页应用在 /admin/xxx 等路径直接刷新时，服务器找不到对应文件会 404，
+# 这里统一回退到 index.html，由前端路由接管。
+/*  /index.html  200
